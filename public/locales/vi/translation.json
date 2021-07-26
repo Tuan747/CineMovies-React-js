@@ -1,0 +1,377 @@
+{
+    "auth": {
+        "register": {
+            "title": "Đăng Ký Thành Viên",
+            "require": " Vui lòng nhập thông tin",
+            "gender": {
+                "male": "Nam",
+                "female": "Nữ"
+            },
+            "name": "Họ và Tên",
+            "birthday": "dd/mm/yyyy(Ngày sinh)",
+            "address": "Địa chỉ",
+            "CMND": "Số CMND",
+            "phonenumber": "Số điện thoại",
+            "email": "example@gmail.com",
+            "username": "Tên đăng nhập",
+            "password": "Mật khẩu",
+            "re-password": "Nhập lại mật khẩu",
+            "access": "Khách hàng đã đồng ý các điều khoản, điều kiện của thành viên Cinestar"
+        },
+        "login": {
+            "title": "Đăng Nhập",
+            "require": "Vui lòng nhập tên người dùng(email) và mật khẩu",
+            "username": "Tên đăng nhập",
+            "password": "Mật khẩu"
+        },
+        "hotline": "028 7300 8881"
+    },
+    "header": {
+        "search": "Tìm kiếm...",
+        "nav": {
+            "movie": "Phim",
+            "schedule": "Lịch",
+            "promotion": "Khuyến mãi",
+            "news": "Tin tức",
+            "gift": "Đổi quà",
+            "admin": "Quản trị"
+        }
+    },
+    "footer": {
+        "ul-1": {
+            "theater": "HỆ THỐNG RẠP"
+        },
+        "ul-2": {
+            "now_show": "Phim đang chiếu",
+            "comming_soon": "Phim sắp chiếu",
+            "news": "Tin tức",
+            "promotion": "Khuyến mãi"
+        },
+        "ul-3": {
+            "info": "THÔNG TIN",
+            "question": "Hỏi & đáp",
+            "contact": "Liên hệ",
+            "intro": "Giới thiệu"
+        },
+        "ul-4": {
+            "policy": "CHÍNH SÁCH & QUY ĐỊNH",
+            "general": "Quy định chung",
+            "security": "Chính sách bảo mật",
+            "transaction": "Điều khoản giao dịch"
+        }
+    },
+    "show_movie": {
+        "now": "Phim đang chiếu",
+        "comming": "Phim sắp chiếu"
+    },
+    "event": "sự kiện",
+    "news": "Tin tức",
+    "login": {
+        "login": "Đăng nhập",
+        "email": "Email",
+        "input_email": "Nhập email",
+        "password": "Mật khẩu",
+        "input_password": "Nhập mật khẩu",
+        "require": "Bắt buộc nhập trường này"
+    },
+    "register": {
+        "register": "Đăng kí",
+        "fullname": "Họ và tên",
+        "input_fullname": "Nhập họ và tên",
+        "date": "Ngày sinh",
+        "input_date": "Nhập ngày sinh",
+        "email": "Email",
+        "input_email": "Nhập email",
+        "password": "Mật khẩu",
+        "input_password": "Nhập mật khẩu",
+        "repassword": "Xác nhận mật khẩu",
+        "input_repassword": "Nhập lại mật khẩu",
+        "point": "Điểm",
+        "input_point": "Nhập điểm",
+        "require": "Bắt buộc nhập trường này",
+        "cancel": "Hủy"
+    },
+    "info": {
+        "info_person": "Thông tin cá nhân",
+        "help": "Trợ giúp",
+        "logout": "Đăng xuất"
+    },
+    "movie": {
+        "buy": "Mua vé",
+        "see_more": "Xem thêm",
+        "name": "Tên phim",
+        "input_name": "Nhập tên phim",
+        "description": "Mô tả",
+        "input_description": "Nhập Mô tả",
+        "director": "Đạo diễn",
+        "input_director": "Nhập đạo diễn",
+        "actor": "Diễn viên",
+        "input_actor": "Nhập diễn viên",
+        "length": "Độ dài phim",
+        "input_length": "Nhập độ dài phim ( phút )",
+        "rating": "Đánh giá",
+        "input_rating": "Nhập số sao",
+        "language": "Ngôn ngữ",
+        "input_language": "Nhập ngôn ngữ",
+        "type": "Thể loại",
+        "input_type": "Nhập thể loại",
+        "status": "Trạng thái",
+        "trailer": "Trailer",
+        "image": "Chọn ảnh",
+        "date_start": "Ngày khởi chiếu",
+        "date_end": "Ngày kết thúc",
+        "playing": "Đang chiếu",
+        "comming": "Sắp chiếu"
+    },
+    "movie_detail": {
+        "start": "Khởi chiếu",
+        "type": "Thể loại",
+        "actor": "Diễn viên",
+        "director": "Đạo diễn",
+        "rating": "Đánh giá",
+        "length": "Độ dài",
+        "language": "Ngôn ngữ"
+    },
+    "user": {
+        "info": "Thông tin tài khoản",
+        "change_password": "Thay đổi mật khẩu",
+        "gift": "Mã quà tặng",
+        "history": "Lịch sử giao dịch",
+        "user_info": {
+            "email": "Email",
+            "dob": "Ngày sinh",
+            "point": "Điểm thưởng",
+            "verify": "Xác minh",
+            "edit": "Chỉnh sửa thông tin"
+        }
+    },
+    "movietime": {
+        "choose_date": "Chọn ngày",
+        "choose_theater": "Chọn rạp",
+        "choose_hour": "Chọn giờ",
+        "notify": "Hãy chọn rạp,ngày,giờ để hiển thị suất chiếu",
+        "select_movie": "Chọn phim",
+        "select_theater": "Chọn rạp",
+        "select_date": "Chọn ngày",
+        "hour": "Giờ chiếu",
+        "price": "Giá vé",
+        "input_price": "Nhập giá vé"
+    },
+    "seat": {
+        "picked": "Ghế đã chọn",
+        "available": "Ghế chưa chọn",
+        "choosing": "Ghế đang chọn"
+    },
+    "ticket": {
+        "title": "Thông tin vé",
+        "minute": "Phút",
+        "seat": "Ghế",
+        "empty_seat": "Chưa chọn ghế",
+        "clear_code": "Hủy",
+        "unit_price": "Đơn giá vé",
+        "gift_code": "Mã giảm giá",
+        "select_gift": "Chọn mã giảm giá",
+        "number_ticket": "Số lượng vé",
+        "total_price": "Tổng tiền",
+        "payment": "Thanh toán",
+        "method": "Phương thức thanh toán",
+        "select": "Select"
+    },
+    "search": {
+        "search_start": "Từ khóa ",
+        "search_center": " đã tìm thấy ",
+        "search_end": " kết quả",
+        "nothing": "Không có gì để tìm kiếm"
+    },
+    "toast": {
+        "required_login": "Bạn chưa đăng nhập",
+        "method": "Hãy chọn phương thức thanh toán",
+        "seat": "Hãy chọn ghế",
+        "payment_success": "Thanh toán thành công",
+        "payment_fail": "Thanh toán thất bại",
+        "login_success": "Đăng nhập thành công",
+        "unpaid": "Bạn có đơn hàng chưa thanh toán",
+        "user": {
+            "incorrect_password": "Sai mật khẩu",
+            "not_found": "Không tìm thấy tài khoản",
+            "login_success": "Đăng nhập thành công",
+            "register_success": "Đăng kí thành công",
+            "register_exist": "Tài khoản đã tồn tại",
+            "register_password_notmatch": "Mật khẩu không trùng khớp"
+        },
+        "gift": {
+            "edit_success": "Chỉnh sửa mã quà tặng thành công",
+            "delete_success": "Xóa mã quà tặng thành công",
+            "date_wrong": "Hãy chọn ngày phù hợp",
+            "new_success": "Tạo thành công",
+            "new_exist": "Tên đã tồn tại, hãy chọn tên khác",
+            "get_success": "Đổi mã quà tặng thành công",
+            "get_notenoughpoint": "Không đủ điểm để đổi",
+            "get_outofcode": "Hết mã quà tặng"
+        },
+        "movie": {
+            "edit_success": "Chỉnh sửa phim thành công",
+            "delete_success": "Xóa phim thành công",
+            "date_wrong": "Hãy chọn ngày phù hợp",
+            "new_success": "Tạo thành công",
+            "new_exist": "Tên đã tồn tại, hãy chọn tên khác",
+            "video_wrong": "Sai định dạng tệp video",
+            "image_wrong": "Sai định dạng tệp ảnh",
+            "delete_isplaying": "Phim đang chiếu, bạn không thể xóa"
+        },
+        "movietime": {
+            "edit_success": "Chỉnh sửa suất chiếu thành công",
+            "delete_success": "Xóa suất chiếu thành công",
+            "date_wrong": "Chọn ngày phù hợp",
+            "new_success": "Tạo suất chiếu thành công",
+            "new_exist": "Suất chiếu đã tồn tại",
+            "select_theater": "Hãy chọn rạp"
+        }
+    },
+    "detail_ticket": {
+        "theater": "Rạp",
+        "date": "Ngày",
+        "hour": "Giờ",
+        "seat": "Ghế"
+    },
+    "history": {
+        "status_success": "Thành công",
+        "status_cancel": "Đã hủy",
+        "paid": "Đã thanh toán",
+        "unpaid": "Chưa thanh toán",
+        "name": "Tên phim",
+        "status": "Trạng thái",
+        "price": "Tổng tiền",
+        "created_at": "Ngày tạo",
+        "payment": "Thanh toán",
+        "time": "Thời gian còn lại",
+        "action": "Hành động",
+        "delete": "Xóa"
+    },
+    "gift": {
+        "modal-title": "Đổi mã quà tặng",
+        "modal-content-start": "Bạn muốn sử dụng ",
+        "modal-content-end": " điểm để đổi mã quà tặng này ?",
+        "modal-yes": "Đồng ý",
+        "modal-no": "Hủy",
+        "trade": "Đổi",
+        "outofcode": "Hết mã",
+        "name": "Tên mã quà tặng",
+        "input_name": "Nhập tên mã quà tặng",
+        "description": "Mô tả",
+        "input_description": "Nhập mô tả",
+        "point": "Điểm",
+        "input_point": "Nhập điểm để lấy",
+        "value": "Giá trị",
+        "input_value": "Nhập giá trị",
+        "amount": "Số lượng",
+        "input_amount": "Nhập số lượng",
+        "date_start": "Ngày bắt đầu",
+        "date_end": "Ngày kết thúc"
+    },
+    "admin": {
+        "dashboard": "Tổng quát",
+        "user": "Quản lý người dùng",
+        "movie": "Quản lý phim",
+        "movietime": "Quản lý suất chiếu",
+        "gift": "Quản lý quà tặng",
+        "revenue": "Quản lý doanh thu",
+        "user_info": {
+            "title": "Thống kê người dùng",
+            "week": "Đã tạo trong tuần này",
+            "month": "Đã tạo trong tháng này",
+            "year": "Đã tạo trong năm này",
+            "name": "Tên",
+            "dob": "Ngày sinh",
+            "email": "Email",
+            "verify": "Xác minh",
+            "point": "Điểm",
+            "action": "Hành động",
+            "edit": "Chỉnh sửa",
+            "edit_title": "Chỉnh sửa tài khoản",
+            "edit_yes": "Chỉnh sửa",
+            "edit_no": "Hủy",
+            "delete": "Xóa",
+            "delete_title": "Xóa tài khoản",
+            "delete_question": "Bạn có muốn xóa tài khoản này ?",
+            "delete_yes": "Xóa",
+            "delete_no": "Hủy"
+        },
+        "gift_info": {
+            "title": "Thống kê mã quà tặng",
+            "name": "Tên",
+            "remain": "Còn lại",
+            "date_start": "Ngày bắt đầu",
+            "date_end": "Ngày kết thúc",
+            "point": "Điểm",
+            "value": "Giá trị",
+            "action": "Hành động",
+            "edit_title": "Chỉnh sửa mã quà tặng",
+            "edit_yes": "Chỉnh sửa",
+            "edit_no": "Hủy",
+            "edit": "Chỉnh sửa",
+            "new_title": "Tạo mã quà tặng mới",
+            "new_yes": "Tạo mới",
+            "new_no": "Hủy",
+            "delete": "Xóa",
+            "delete_title": "Xóa mã quà tặng",
+            "delete_question": "Bạn muốn xóa mã quà tặng này ?",
+            "delete_yes": "Xóa",
+            "delete_no": "Hủy",
+            "week": "Số lượng đã lấy trong tuần này",
+            "month": "Số lượng đã lấy trong tháng này",
+            "year": "Số lượng đã lấy trong năm này"
+        },
+        "movie_info": {
+            "title": "Thống kê phim",
+            "name": "Tên phim",
+            "date_start": "Ngày khởi chiếu",
+            "director": "Đạo diễn",
+            "language": "Ngôn ngữ",
+            "length": "Độ dài",
+            "minute": "Phút",
+            "playing": "Đang chiếu",
+            "action": "Hành động",
+            "edit_title": "Chỉnh sửa phim",
+            "edit_yes": "Chỉnh sửa",
+            "edit_no": "Hủy",
+            "edit": "Chỉnh sửa",
+            "new_title": "Tạo phim mới",
+            "new_yes": "Tạo mới",
+            "new_no": "Hủy",
+            "delete": "Xóa",
+            "delete_title": "Xóa phim",
+            "delete_question": "Bạn muốn xóa phim này ?",
+            "delete_yes": "Xóa",
+            "delete_no": "Hủy",
+            "number_playing": "Số lượng phim đang chiếu",
+            "number_commingsoon": "Số lượng phim sắp chiếu",
+            "number_all": "Số lượng tất cả phim"
+        },
+        "movietime_info": {
+            "title": "Thống kê suất chiếu",
+            "name": "Tên phim",
+            "date": "Ngày",
+            "hour": "Giờ",
+            "price": "Giá tiền",
+            "action": "Hành động",
+            "edit_title": "Chỉnh sửa suất chiếu",
+            "edit_yes": "Chỉnh sửa",
+            "edit_no": "Hủy",
+            "edit": "Chỉnh sửa",
+            "new_title": "Tạo suất chiếu mới",
+            "new_yes": "Tạo mới",
+            "new_no": "Hủy",
+            "delete": "Xóa",
+            "delete_title": "Xóa suất chiếu",
+            "delete_question": "Bạn muốn xóa suất chiếu này ?",
+            "delete_yes": "Xóa",
+            "delete_no": "Hủy",
+            "number_playing": "Số lượng suất chiếu đang chiếu",
+            "number_commingsoon": "Số lượng suất chiếu sắp chiếu",
+            "number_all": "Tổng suất chiếu",
+            "select_theater": "Chọn rạp",
+            "select_date": "Chọn ngày"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../../base";
+@import "../../../variables";
+
+.user {
+    margin: 20px;
+    text-align: center;
+    .show__tab {
+        margin: auto;
+        margin-bottom: 5px;
+        width: 50%;
+        ul {
+            @include flexOptions(space-around, center);
+            color: white;
+            list-style-type: none;
+            margin-bottom: 0px;
+            li {
+                @include clearStylea;
+                @include flexOptions(center, center);
+                margin: 20px;
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+                background-color: #f18720;
+                padding: 0 78px;
+                border-radius: 77px 90px 90px 0;
+                margin: 0 -35px;
+                font-weight: bold;
+                font-size: 2rem;
+                color: #ffffff;
+                box-shadow: 5px 5px 0 #0000001a;
+                transition: 0.5s;
+                height: 45px;
+                cursor: pointer;
+            }
+            .user__info-active {
+                background-color: $background-color-hover-yellow;
+                color: $text-color-black;
+                a {
+                    @include clearStylea;
+                    color: black;
+                }
+            }
+            a {
+                @include clearStylea;
+                color: white;
+            }
+        }
+    }
+}

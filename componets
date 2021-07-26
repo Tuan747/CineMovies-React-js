@@ -1,0 +1,165 @@
+z-index: 
+    10 - register
+    9 - login
+    8 - overlay
+    2 - phim dang chieu
+    1 - phim sap chieu
+
+
+body 
+    header (shared iu) 
+        div.header__logo
+            div.container
+                div.row
+                    div.col
+                        img
+
+        div.header__search
+            div.container
+                div.row
+                    div.col
+                        input.header__search--input
+                            i.header__search--icon
+
+        div.header__nav
+            div.container
+                div.row
+                    div.col
+                        ul.header-bar__links > li * 8 > a
+
+
+    main 
+        section.main-movie
+            div.container
+                div.row
+                    div.col
+                        div.main-status
+                            ul.main-status__select > li * 2 > a
+
+                div.row
+                    div.col
+                        div.movie-content
+                            img
+                            div.movie-content__name
+                            div.movie-content__decs
+                            div.movie-content__space
+                            div.movie-content__type 
+                                i
+                            div.movie-content__but
+                                a.trailer-btn
+                                a.cart-btn
+
+    footer
+        div.payment
+            h2
+            ul > li * 5
+
+        div.copyright   
+            p
+                a
+                    img
+
+            p
+
+
+
+
+
+
+login & Register
+
+div.auth
+    div.container-fluid
+        div.row
+            div.col
+                img
+                div.auth__regiter
+                    form.auth__regiter-submit
+                        div.container-register
+                            p.container-register__sugess
+                            div.container-register__gender
+                                input*2
+                            input.container-register__name
+                            input.container-register__birthday
+                            input.container-register__addres
+                            input.container-register__cmnd
+                            input.container-register__phonenumber
+                            input.container-register__email
+                            input.container-register__uername
+                            input.container-register__password
+                            input.container-register__re-password
+                            input.container-register__accsess
+                            input.container-register__button
+
+
+            div.col 
+                img
+                div.auth__login
+                    form.auth__login-submit
+                        div.container-login
+                            p.container-login__sugess
+                            input.container-login__username
+                                icon
+                            input.container-login__password
+                                icon
+                            input.container-login__button
+                            
+            div.col
+                div.phonenumber
+                    i.phonenumber__icon
+                    p.phonenumber__number
+
+                    
+Movies 
+    div.container 
+        div.row
+            div.col
+                div.movies-status
+                    ul > navlink >li * 2
+
+        div.row 
+            div.col lg-2
+                div.movie-container
+                    div.movie-container__main
+                        div.movie-container__main-img
+                            img
+                        div.movie-container__main-content
+                            div.movie-container__main-name
+                            div.movie-container__main-desc
+                            div.movie-container__main-type
+                            div.movie-container__main-action
+                                ul > li * 2
+
+
+
+
+detail Movies
+    div.container 
+        div.row
+            div.column
+                div.img-movie
+                    img
+
+            div.column
+                div.content-movie
+                    div.content-movie__name
+                        span
+                    div.content-movie__start
+                        span
+                    div.content-movie__type
+                        span
+                    div.content-movie__actor
+                        span
+                    div.content-movie__directors
+                        span
+                    div.content-movie__time
+                        span
+                    div.content-movie__desc
+                        span
+                    div.content-movie__vote
+                        icon
+                     
+        div.row
+            div.col
+                div.btn__ticket-show
+        

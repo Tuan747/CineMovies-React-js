@@ -1,0 +1,215 @@
+@import "../../variables";
+@import "../../base";
+
+.auth {
+    .auth__container {
+        background-color: $background-color-white;
+        @include flexOptions(space-around, center);
+        height: 6.5rem;
+        font-size: $font-size-xxxl;
+        .show__auth-active {
+            display: block;
+        }
+        .show__auth-disable {
+            display: none;
+        }
+        .auth__event {
+            @include flexOptions(center, center);
+            text-align: center;
+            .auth__register {
+                margin-right: 5rem;
+                cursor: pointer;
+                color: $text-color-main;
+                font-weight: bold;
+            }
+            .auth__register span {
+                transition: 0.5s;
+                &:hover {
+                    color: $text-color-hover;
+                }
+            }
+            .auth__login {
+                margin-right: 34rem;
+                cursor: pointer;
+                color: $text-color-main;
+                font-weight: bold;
+                transition: 0.5s;
+                &:hover {
+                    color: $text-color-hover;
+                }
+            }
+        }
+        .phonenumber {
+            .phonenumber__number {
+                font-weight: bold;
+                font-size: $font-size-xxxxl;
+                color: $text-color-main;
+                transition: 0.5s;
+                text-decoration: none;
+                &:hover {
+                    color: $text-color-hover;
+                }
+            }
+        }
+    }
+}
+.auth__register-submit {
+    z-index: 10;
+    position: absolute;
+    flex-direction: column;
+    color: $text-color-main;
+    top: 2rem;
+    text-align: center;
+    display: inline-block;
+    .container-register {
+        @include flexOptions(none, none);
+        flex-direction: column;
+        width: 77rem;
+        margin: auto;
+        font-size: $font-size-l;
+        background-color: white;
+        border-radius: 10px;
+        padding: 2rem;
+        cursor: auto;
+        .container-register__sugess {
+            font-size: $font-size-xl;
+            margin-bottom: 18px;
+            text-align: center;
+            color: $text-color-main;
+            font-style: italic;
+            font-weight: normal;
+        }
+        select {
+            padding: 1rem;
+            width: 8rem;
+            color: $text-color-main;
+            margin-bottom: 6px;
+            border-radius: 3px;
+            border: 1px solid $box-color-border;
+            transition: 0.5s;
+            margin-left: 110px;
+            outline: none;
+            &:hover option {
+                color: $text-color-hover;
+            }
+        }
+        .input__register {
+            @include flexOptions(center, center);
+            flex-direction: column;
+            .style-box {
+                width: 70%;
+                height: 40px;
+                margin: 6px 2px 6px 0px;
+                border-radius: 5px;
+                border: 1px solid $box-color-border;
+                font-style: italic;
+                padding: 0 10px;
+                color: $text-color-main;
+                font-weight: normal;
+                outline: none;
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+            .container-register__accsess {
+                color: $text-color-main;
+                font-size: $font-size-l;
+                margin: 10px 0;
+            }
+        }
+        .btn__submit {
+            font-size: $font-size-xxxl;
+            text-transform: uppercase;
+            background-color: $background-color-orange;
+            color: $text-color-white;
+            border-radius: 30px 30px 30px 0;
+            padding: 8px 26px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+            width: 16%;
+            margin: 0 auto;
+            margin-top: 10px;
+            transition: 0.5s;
+            &:hover {
+                background-color: $background-color-hover;
+            }
+        }
+    }
+}
+.auth__login-submit {
+    z-index: 9;
+    position: absolute;
+    flex-direction: column;
+    color: $text-color-black;
+    text-align: center;
+    display: inline;
+    .container-login {
+        @include flexOptions(none, none);
+        flex-direction: column;
+        width: 60rem;
+        margin: auto;
+        font-size: 13px;
+        background-color: $background-color-white;
+        border-radius: 10px;
+        padding: 2rem;
+        cursor: auto;
+        .container-login__sugess {
+            font-size: $font-size-l;
+            margin-bottom: 18px;
+            text-align: center;
+            color: $text-color-orange;
+            font-style: italic;
+            font-weight: normal;
+        }
+        .input__login {
+            @include flexOptions(center, center);
+            flex-direction: column;
+            .style-box {
+                width: 70%;
+                height: 40px;
+                margin: 6px 2px 6px 0px;
+                border-radius: 5px;
+                border: 1px solid $border-color-main;
+                font-style: italic;
+                padding: 0 10px;
+                color: $text-color-main;
+                font-weight: normal;
+                outline: none;
+                &::placeholder {
+                    color: $placeholder-color;
+                }
+            }
+        }
+    }
+    .btn__submit {
+        font-size: $font-size-xxxl;
+        text-transform: uppercase;
+        background-color: $background-color-orange;
+        color: $text-color-white;
+        border-radius: 30px 30px 30px 0;
+        padding: 8px 26px;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        border: none;
+        font-weight: bold;
+        width: 16%;
+        margin: 0 auto;
+        margin-top: 10px;
+        &:hover {
+            background-color: $background-color-hover;
+        }
+    }
+}
+.overlay {
+    z-index: 8;
+    background-color: $background-color-overlay;
+    opacity: 1;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

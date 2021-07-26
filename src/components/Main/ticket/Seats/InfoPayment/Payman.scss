@@ -1,0 +1,73 @@
+@import "../../../../variables";
+@import "../../../../base";
+
+.title__payment,
+.info__movies-name .info__movies-time,
+.info__alltime,
+.info__movies-seats,
+.info__movies-price,
+.info__price-total,
+.info__price-method,
+.btn_form {
+    margin: 0px;
+    padding: 1rem 0px;
+}
+.title__payment,
+.info__alltime,
+.info__movies-seats,
+.info__movies-price {
+    border-bottom: 4px solid $border-color-white-main;
+}
+.between {
+    @include flexOptions(space-between, center);
+    padding: 1rem 1.4rem;
+}
+.info__payment {
+    margin: 4rem 0px;
+    .detail__payment {
+        background-color: $background-color-hover-dark-main;
+        color: $text-color-white;
+        text-align: center;
+        width: 39rem;
+        margin: 0 auto;
+        border: 4px solid $border-color-white-main;
+        .info__movies {
+            .info__movies-name {
+                margin: 0 auto;
+                padding: 1rem 0px;
+            }
+            .info__alltime {
+                @include flexOptions(space-between, center);
+                padding: 1rem 1.4rem;
+            }
+            .info__movies-seats {
+                .seated {
+                    span {
+                        font-size: $font-size-l;
+                    }
+                }
+            }
+            .info__price-method {
+                .dropdown {
+                    button {
+                        background-color: $background-color-white;
+                        color: $background-color-hover-dark-main;
+                        font-size: $font-size-l;
+                        text-align: center;
+                    }
+                    .dropdown-item:hover {
+                        transition: all 0.2s ease-in;
+                        background-color: $background-color-hover-yellow;
+                    }
+                    .dropdown-menu {
+                        min-width: auto;
+                        padding: 0;
+                        .dropdown-item {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

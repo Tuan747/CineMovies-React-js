@@ -1,0 +1,41 @@
+@import "../../../../base";
+@import "../../../../variables";
+
+.user__detail-active {
+    background-color: $background-color-hover-yellow;
+    color: $text-color-black;
+    display: block;
+}
+.user__detail-disable {
+    display: none;
+}
+
+.user__detail {
+    @include flexOptions(none, none);
+    margin-top: 2px;
+    padding: 50px;
+    .user__detail-img {
+        margin-right: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .user__detail-basic {
+        @include flexOptions(flex-start, baseline);
+        flex-direction: column;
+        .detail__basic {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            span {
+                @include btn_form($text-color-white, $background-color-main, $background-color-hover-whitemain);
+                font-size: 1.4rem;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+.btn_form {
+    @include btn_form($text-color-white, $background-color-main, $background-color-hover-whitemain);
+    margin: 20px;
+    font-weight: bold;
+}

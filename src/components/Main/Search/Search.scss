@@ -1,0 +1,12 @@
+@import "../../base";
+@import "../../variables";
+
+.search {
+    &__notify {
+        font-size: $font-size-xxxl;
+        color: $text-color-white;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+}

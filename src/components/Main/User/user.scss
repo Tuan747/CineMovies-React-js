@@ -1,0 +1,53 @@
+@import "../../base";
+@import "../../variables";
+
+.user__info {
+    @include flexOptions(center, center);
+    .user {
+        background-color: $background-color-orange;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        padding: 10px;
+        svg {
+            color: $text-color-white;
+        }
+    }
+    .user__name {
+        margin-left: 10px;
+    }
+    .more__user {
+        display: none;
+        font-size: 14px;
+        position: absolute;
+        z-index: 9999;
+        background-color: $background-color-main;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 167px;
+        padding: 5px;
+        border-radius: 7px;
+        border: 1px solid $border-color-white;
+        ul {
+            padding: 0;
+            margin-bottom: 0%;
+            li {
+                padding: 10px;
+                color: white;
+                font-weight: 500;
+                cursor: pointer;
+                list-style: none;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        :hover {
+            color: $text-color-black;
+        }
+    }
+}
+:hover > .more__user {
+    display: block;
+}
