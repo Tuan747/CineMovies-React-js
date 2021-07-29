@@ -43,10 +43,13 @@ const AllPayment = createSlice({
                 method: action.payload
             }
         },
+        rePayment: () => {
+
+        }
     }
 })
 
 const { actions, reducer } = AllPayment;
-export const { getData, paymentSuccess, paymentError, paymentReset, paymentMethode } = actions;
+export const { getData, rePayment, paymentSuccess, paymentError, paymentReset, paymentMethode } = actions;
 export default reducer;
 

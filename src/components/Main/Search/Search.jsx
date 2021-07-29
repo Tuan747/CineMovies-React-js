@@ -24,7 +24,7 @@ function Search() {
             return <FontAwesomeIcon key={index} icon={faStar} />
         })
         return (
-            <div key={index} className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <div key={index}>
                 <div className="movie-container">
                     <div className="movie-container__main">
                         <div className="movie-container__main-img" >

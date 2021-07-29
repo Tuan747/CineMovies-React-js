@@ -66,3 +66,27 @@
 .btn__ticket a {
     @include clearStylea;
 }
+
+/* responsive */
+
+/* mobile, ipad ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 1024px) {
+    .content {
+        max-width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        .center {
+            display: block;
+            .detail__content {
+                .name {
+                    text-align: center;
+                }
+                .text__detail {
+                    .btn_form {
+                        font-size: $font-size-m;
+                    }
+                }
+            }
+        }
+    }
+}

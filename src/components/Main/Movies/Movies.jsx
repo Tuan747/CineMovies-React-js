@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Author from '../Author/Author';
 import "./Movies.scss"
 import { NavLink, useRouteMatch } from "react-router-dom";
-import "./../../Header/Header.css"
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -36,7 +35,7 @@ function Movies() {
                 return <FontAwesomeIcon key={index} icon={faStar} />
             })
             return (
-                <div key={index} className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <div key={index} className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                     <div className="movie-container">
                         <div className="movie-container__main">
                             <div className="movie-container__main-img" >

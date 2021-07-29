@@ -70,3 +70,77 @@
         }
     }
 }
+
+/* responsive */
+
+/* mobile ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .movietime__select {
+        flex-direction: column;
+        .movietime__item {
+            .dropdown {
+                .btn_form {
+                    font-size: $font-size-m !important;
+                }
+            }
+        }
+    }
+    .seat__row {
+        display: inline-block;
+        .seat__colume {
+            svg {
+                font-size: $font-size-xxl;
+                margin: 5px;
+            }
+        }
+    }
+    .seat__note {
+        .seat__note-item {
+            h1 {
+                font-size: $font-size-m !important;
+            }
+        }
+    }
+    .detail__payment {
+        width: auto !important;
+        .info__movies {
+            font-size: $font-size-m;
+        }
+    }
+}
+
+/* ipad ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .movietime__select {
+        flex-direction: column;
+        .movietime__item {
+            .dropdown {
+                .btn_form {
+                    font-size: $font-size-m !important;
+                }
+            }
+        }
+    }
+    .seat__row {
+        display: inline-block;
+        .seat__colume {
+            svg {
+                font-size: $font-size-xxl;
+                margin: 5px;
+            }
+        }
+    }
+    .seat__note {
+        .seat__note-item {
+            h1 {
+                font-size: $font-size-m !important;
+            }
+        }
+    }
+    .detail__payment {
+        width: auto !important;
+        .info__movies {
+            font-size: $font-size-m;
+        }
+    }
+}

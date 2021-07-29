@@ -21,6 +21,17 @@ function App() {
         <div className="App">
             <Suspense fallback={<div>Loading...</div>}>
                 <Loading />
+                <ToastContainer
+                    position="top-right"
+                    autoClose={1000}
+                    hideProgressBar
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                />
                 <Router>
                     <Header />
                     <Switch>
@@ -38,17 +49,6 @@ function App() {
                     <Footer />
                 </Router>
             </Suspense>
-            <ToastContainer
-                position="top-right"
-                autoClose={1000}
-                hideProgressBar
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-            />
         </div>
     );
 }

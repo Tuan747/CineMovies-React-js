@@ -16,9 +16,6 @@ function Seats(props) {
     const seatsSelected = useSelector((state) => state.AllTime.seats)
 
     function handleSelect(id, available) {
-
-        console.log(-1 < 0)
-
         const price = allSeats.price
         if (available) {
             if (seatsSelected.indexOf(id) < 0) {

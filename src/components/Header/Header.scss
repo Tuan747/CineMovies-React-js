@@ -1,0 +1,102 @@
+@import "../base";
+@import "..//variables";
+
+#header {
+    .header__logo {
+    }
+    .header__selected {
+        float: right;
+        position: relative;
+        top: -89px;
+        .header__search {
+            .header__search-input {
+                width: 273px;
+                outline: none;
+                border-radius: 20px;
+                height: 40px;
+                padding-left: 15px;
+                color: $text-color-search;
+                background-color: $border-color-black;
+                border: none;
+            }
+        }
+    }
+    .header__nav {
+        position: absolute;
+        top: 85px;
+        right: 18rem;
+        border: 1px solid $border-color-main;
+        border-radius: 30px;
+        padding: 3px;
+        .header__nav-bar {
+            @include flexOptions(center, center);
+            padding-left: 0;
+            height: 51px;
+            margin-bottom: 0;
+            border-radius: 30px;
+            background-color: $background-color-main;
+            overflow: hidden;
+            a {
+                text-decoration: none;
+                color: $text-color-white;
+                font-weight: bold;
+                li {
+                    padding: 0 15px 0px 15px;
+                    font-size: 18px;
+                    list-style-type: none;
+                    height: 51px;
+                    line-height: 51px;
+                    transition: 0.3s;
+                    &:hover {
+                        background-color: $background-color-hover-yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.checked {
+    background-color: $background-color-hover-yellow;
+}
+
+/* responsive */
+
+/* mobile ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    #header {
+        .header__logo {
+            img {
+                width: 100px;
+            }
+        }
+        .header__selected {
+            top: -30px;
+            .header__search {
+                font-size: $font-size-m;
+                .header__search-input {
+                    border-radius: 30px;
+                    height: 32px;
+                    width: 70%;
+                }
+            }
+        }
+        .header__nav {
+            right: 0;
+            top: 58px;
+            margin: 0px 10px;
+            .header__nav-bar {
+                a {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+/* ipad ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .header__nav {
+        right: 0;
+    }
+}

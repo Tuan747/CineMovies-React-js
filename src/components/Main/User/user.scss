@@ -51,3 +51,34 @@
 :hover > .more__user {
     display: block;
 }
+
+
+
+/* responsive */
+
+/* mobile, ipad ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 1024px) {
+    .auth {
+        .auth__container {
+            justify-content: end;
+            .phonenumber {
+                display: none;
+            }
+            .user__info {
+                .user {
+                    width: 30%;
+                    height: 30%;
+                }
+                .user__name {
+                    margin-left: 0px;
+                }
+                .more__user {
+                    padding: 0px;
+                    font-size: $font-size-m;
+                    margin-right: -10%;
+                    margin-top: 142px;
+                }
+            }
+        }
+    }
+}

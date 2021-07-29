@@ -8,12 +8,15 @@ import { TAB_USER_HISTORY } from '../../../../../constants';
 import { getHistory } from '../../../../../redux/Selecting_userSlice';
 import Countdown from 'react-countdown';
 import "./HistoryPayment.scss"
+import { rePayment } from '../../../../../redux/PaymentSlice';
 
 function HistoryPayment() {
     const { t } = useTranslation();
     const dispatch = useDispatch()
     const tab = useSelector((state) => state.SelectTabs.tabs)
     const history = useSelector((state) => state.SelectTabs.historys)
+    const payment = useSelector((state) => state.Payment.payment)
+    const { link } = payment
 
     const renderTime = ({ minutes, seconds, completed }) => {
         if (completed) {
@@ -28,15 +31,25 @@ function HistoryPayment() {
         dispatch(getHistory())
     }, [dispatch])
 
+    function handlePayment(item) {
+        dispatch(rePayment(item))
+    }
+
+    useEffect(() => {
+        if (link) {
+            window.open(link)
+        }
+    }, [link])
+
     const renderHistory = history?.map((item, index) => {
         const { namemovie, paid, price, createdAt, status } = item
         return (
             <tr key={index}>
-                <td>{index + 1}</td>
+                <td className="disable">{index + 1}</td>
                 <td>{namemovie}</td>
-                <td>{status ? t('history.status_success') : t('history.status_cancel')}</td>
+                <td className="disable">{status ? t('history.status_success') : t('history.status_cancel')}</td>
                 <td>{price} VND</td>
-                <td>{new Date(createdAt).toLocaleDateString()}</td>
+                <td className="disable">{new Date(createdAt).toLocaleDateString()}</td>
                 <td>{paid ? t('history.paid') : t('history.unpaid')}</td>
                 <td>{status && paid === false
                     ? <Countdown date={new Date(createdAt).getTime() + 600000} renderer={renderTime} />
@@ -45,7 +58,7 @@ function HistoryPayment() {
                 <td>
                     {(status && paid) || status === false
                         ? <Button className="btn__ticket-delete">{t('history.delete')}</Button>
-                        : <Button className="btn__ticket-payment">{t('history.payment')}</Button>}
+                        : <Button onClick={() => handlePayment(item)} className="btn__ticket-payment">{t('history.payment')}</Button>}
                 </td>
             </tr>
         )
@@ -60,11 +73,11 @@ function HistoryPayment() {
                 <table>
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th className="disable">#</th>
                             <th>{t('history.name')}</th>
-                            <th>{t('history.status')}</th>
+                            <th className="disable">{t('history.status')}</th>
                             <th>{t('history.price')}</th>
-                            <th>{t('history.created_at')}</th>
+                            <th className="disable">{t('history.created_at')}</th>
                             <th>{t('history.payment')}</th>
                             <th>{t('history.time')}</th>
                             <th>{t('history.action')}</th>

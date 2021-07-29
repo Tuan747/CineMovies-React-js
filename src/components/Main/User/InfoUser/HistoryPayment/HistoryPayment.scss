@@ -32,3 +32,38 @@
         background-color: #dddddd;
     }
 }
+
+
+/* responsive */
+
+/* mobile ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .history {
+        td {
+            font-size: $font-size-m;
+        }
+        th {
+            font-size: $font-size-m;
+        }
+        .disable {
+            display: none;
+        }
+        .btn__ticket-payment, 
+        .btn__ticket-delete {
+            padding: 5px 0px;
+            font-size: $font-size-m;
+        }
+    }
+}
+
+/* ipad ----------- */
+@media only screen and (min-device-width:768px) and (max-device-width: 1024px) {
+    .history {
+        td {
+            font-size: $font-size-l;
+        }
+        th {
+            font-size: $font-size-l;
+        }
+    }
+}

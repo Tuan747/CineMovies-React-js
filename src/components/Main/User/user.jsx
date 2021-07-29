@@ -14,7 +14,7 @@ function User() {
     const name = useSelector((state) => state.Author.dataUser.name)
 
     function handleLogout() {
-        localStorage.setItem('token', '')
+        localStorage.clear()
         dispatch(logOut())
     }
 

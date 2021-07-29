@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import "./Footer.scss"
 
-function Footer(props) {
+function Footer() {
+    const { t } = useTranslation();
+
     return (
         <div className="copyright">
             <p>
@@ -10,13 +13,13 @@ function Footer(props) {
                 </a>
             </p>
             <p>
-                CÔNG TY CỔ PHẦN GIẢI TRÍ PHÁT HÀNH PHIM – RẠP CHIẾU PHIM NGÔI SAO
+                {t('footer.line1')}
                 <br />
-                ĐỊA CHỈ: 135 HAI BÀ TRƯNG, PHƯỜNG BẾN NGHÉ, QUẬN 1, TP.HCM
+                {t('footer.line2')}
                 <br />
-                GIẤY CNĐKDN SỐ: 0312742744, ĐĂNG KÝ LẦN ĐẦU NGÀY 18/04/2014, ĐĂNG KÝ THAY ĐỔI LẦN THỨ 2 NGÀY 15/09/2014, CẤP BỞI SỞ KH&ĐT TP.HCM
+                {t('footer.line3')}
                 <br />
-                2015 © <strong>CINESTAR</strong>. All rights reserved.
+                {t('footer.line4')}<strong>{t('footer.line5')}</strong>{t('footer.line6')}
             </p>
         </div>
     );

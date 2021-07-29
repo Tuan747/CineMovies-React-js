@@ -111,3 +111,87 @@
         }
     }
 }
+
+/* responsive */
+
+/* mobile ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+    .movies-status {
+        margin: 0;
+        display: flex;
+        ul {
+            a {
+                font-size: $font-size-m;
+                padding: 0 50px;
+                margin: 0 -21px;
+                height: 43px;
+                line-height: 43px;
+            }
+        }
+    }
+
+    //ad
+    .movie-container {
+        padding: 10px;
+        .movie-container__main {
+            display: block;
+            .movie-container__main-img {
+                padding: 0;
+                img {
+                    min-width: 100%;
+                }
+            }
+            .movie-container__main-content {
+                .movie-container__main-desc,
+                .movie-container__main-type {
+                    display: none;
+                }
+                .movie-container__main-name {
+                    font-size: $font-size-m;
+                    margin: 10px 0;
+                    min-height: 10px;
+                }
+            }
+        }
+    }
+}
+
+/* ipad ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .movies-status {
+        margin: 0;
+        @include flexOptions(center, center);
+        ul {
+            a {
+                font-size: $font-size-m;
+                padding: 0 50px;
+                margin: 0 -21px;
+                height: 43px;
+                line-height: 43px;
+            }
+        }
+    }
+    .movie-container {
+        padding: 10px;
+        .movie-container__main {
+            display: block;
+            .movie-container__main-img {
+                padding: 0;
+                img {
+                    max-height: 570px;
+                }
+            }
+            .movie-container__main-content {
+                .movie-container__main-desc,
+                .movie-container__main-type {
+                    display: block;
+                }
+                .movie-container__main-name {
+                    font-size: $font-size-m;
+                    margin: 10px 0;
+                    min-height: 10px;
+                }
+            }
+        }
+    }
+}

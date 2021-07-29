@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import "./Header.css"
+import "./Header.scss"
 import { NavLink, useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
@@ -32,22 +32,19 @@ function Header() {
     <header id="header">
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-xs-12 .col-sm-6 .col-md-8">
             <div className="header__logo">
               <img src="http://cinestar.com.vn/pictures/moi/9Logo/white-2018.png" alt="" />
             </div>
           </div>
-          <div className="col">
+          <div className=".col-xs-6 .col-md-4">
             <div className="header__selected">
               <div className="header__search">
-                <input type="text" className="header__search--input" onChange={handleChangeSearch} placeholder="Tìm Kiếm..." />
-                <i className="fas fa-search" />
+                <input type="text" className="header__search-input" onChange={handleChangeSearch} placeholder="Tìm Kiếm..." />
               </div>
             </div>
-          </div>
-          <div className="col">
             <div className="header__nav">
-              <ul className="header__nav--bar">
+              <ul className="header__nav-bar">
                 <NavLink activeClassName="checked" to="/phim"><li>{t('header.nav.movie')}</li></NavLink >
                 <NavLink activeClassName="checked" to="/lich"><li>{t('header.nav.schedule')}</li></NavLink >
                 <NavLink activeClassName="checked" to="/khuyenmai"><li>{t('header.nav.promotion')}</li></NavLink >
@@ -57,6 +54,7 @@ function Header() {
             </div>
           </div>
         </div>
+
       </div>
     </header >
 

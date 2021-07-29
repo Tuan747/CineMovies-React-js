@@ -27,12 +27,12 @@ function InfoUser() {
                         <li className={classNames({ 'user__info-active': tab === TAB_USER_INFOMATION })}
                             onClick={() => handleClickChangeTab(TAB_USER_INFOMATION)}
                             style={{ zIndex: 2 }}>
-                            <a href>{t('user.info')}</a>
+                            <a>{t('user.info')}</a>
                         </li>
                         <li className={classNames({ 'user__info-active': tab === TAB_USER_HISTORY })}
                             onClick={() => handleClickChangeTab(TAB_USER_HISTORY)}
                             style={{ zIndex: 1 }}>
-                            <a href>{t('user.history')}</a>
+                            <a>{t('user.history')}</a>
                         </li>
                     </ul>
                 </div>

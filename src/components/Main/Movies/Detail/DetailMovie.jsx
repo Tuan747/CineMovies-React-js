@@ -20,7 +20,6 @@ function DetailMovie() {
     }, [params.slug, dispatch])
 
     const { name, actor, decription, language, rating, type, image, slug, date, length } = data
-    console.log(data)
     const handleShowRating = [...Array(rating)].map((rating, index) => {
         return <FontAwesomeIcon key={index} icon={faStar} />
     })
