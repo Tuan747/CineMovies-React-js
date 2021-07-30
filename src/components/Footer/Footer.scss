@@ -13,6 +13,11 @@
         font-weight: 100;
         font-size: $font-size-l;
         text-transform: uppercase;
+        a {
+            img {
+                width: 10%;
+            }
+        }
     }
 }
 
@@ -22,7 +27,12 @@
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
     .copyright {
         p {
-            font-size: 1.2rem;
+            font-size: $font-size-m;
+            a {
+                img {
+                    width: 40%;
+                }
+            }
         }
     }
 }
@@ -31,7 +41,12 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .copyright {
         p {
-            font-size: 1.2rem;
+            font-size: $font-size-m;
+            a {
+                img {
+                    width: 30%;
+                }
+            }
         }
     }
 }

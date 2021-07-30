@@ -4,6 +4,7 @@ import { NavLink, useHistory } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { getValue } from '../../redux/SearchSlice';
+import logo from "./../../resourses/img/logo.png";
 
 function Header() {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ function Header() {
         <div className="row">
           <div className="col-xs-12 .col-sm-6 .col-md-8">
             <div className="header__logo">
-              <img src="http://cinestar.com.vn/pictures/moi/9Logo/white-2018.png" alt="" />
+              <img src={logo} alt="" />
             </div>
           </div>
           <div className=".col-xs-6 .col-md-4">

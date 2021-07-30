@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import "./Footer.scss"
+import BCT from "../../resourses/img/BCT.png"
 
 function Footer() {
     const { t } = useTranslation();
@@ -9,7 +10,7 @@ function Footer() {
         <div className="copyright">
             <p>
                 <a href="http://online.gov.vn/Home/WebDetails/51398" target="blank">
-                    <img src="http://cinestar.com.vn/catalog/view/theme/default/images/dathongbao.png" alt="Footer" />
+                    <img src={BCT} alt="Footer" />
                 </a>
             </p>
             <p>
